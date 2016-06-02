@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8E0388401D00F8EA00700385 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E03883F1D00F8EA00700385 /* main.m */; };
 		8E0388431D00F8EA00700385 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0388421D00F8EA00700385 /* AppDelegate.m */; };
-		8E0388461D00F8EA00700385 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0388451D00F8EA00700385 /* ViewController.m */; };
+		8E0388461D00F8EA00700385 /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0388451D00F8EA00700385 /* Start.m */; };
 		8E0388491D00F8EB00700385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0388471D00F8EB00700385 /* Main.storyboard */; };
 		8E03884C1D00F8EB00700385 /* GameOfThronesGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E03884A1D00F8EB00700385 /* GameOfThronesGame.xcdatamodeld */; };
 		8E03884E1D00F8EC00700385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E03884D1D00F8EC00700385 /* Assets.xcassets */; };
@@ -21,8 +21,8 @@
 		8E03883F1D00F8EA00700385 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8E0388411D00F8EA00700385 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8E0388421D00F8EA00700385 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8E0388441D00F8EA00700385 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8E0388451D00F8EA00700385 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8E0388441D00F8EA00700385 /* Start.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Start.h; sourceTree = "<group>"; };
+		8E0388451D00F8EA00700385 /* Start.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Start.m; sourceTree = "<group>"; };
 		8E0388481D00F8EB00700385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E03884B1D00F8EB00700385 /* GameOfThronesGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GameOfThronesGame.xcdatamodel; sourceTree = "<group>"; };
 		8E03884D1D00F8EC00700385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,10 +60,8 @@
 		8E03883D1D00F8EA00700385 /* GameOfThronesGame */ = {
 			isa = PBXGroup;
 			children = (
-				8E0388411D00F8EA00700385 /* AppDelegate.h */,
-				8E0388421D00F8EA00700385 /* AppDelegate.m */,
-				8E0388441D00F8EA00700385 /* ViewController.h */,
-				8E0388451D00F8EA00700385 /* ViewController.m */,
+				8E0388591D00FB5800700385 /* Controllers */,
+				8E0388581D00FB4800700385 /* Main */,
 				8E0388471D00F8EB00700385 /* Main.storyboard */,
 				8E03884D1D00F8EC00700385 /* Assets.xcassets */,
 				8E03884F1D00F8EC00700385 /* LaunchScreen.storyboard */,
@@ -80,6 +78,24 @@
 				8E03883F1D00F8EA00700385 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E0388581D00FB4800700385 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8E0388411D00F8EA00700385 /* AppDelegate.h */,
+				8E0388421D00F8EA00700385 /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		8E0388591D00FB5800700385 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E0388441D00F8EA00700385 /* Start.h */,
+				8E0388451D00F8EA00700385 /* Start.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E0388461D00F8EA00700385 /* ViewController.m in Sources */,
+				8E0388461D00F8EA00700385 /* Start.m in Sources */,
 				8E0388431D00F8EA00700385 /* AppDelegate.m in Sources */,
 				8E03884C1D00F8EB00700385 /* GameOfThronesGame.xcdatamodeld in Sources */,
 				8E0388401D00F8EA00700385 /* main.m in Sources */,
