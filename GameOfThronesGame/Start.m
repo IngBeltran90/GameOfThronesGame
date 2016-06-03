@@ -27,12 +27,13 @@
 /*-----------------------------------*/
 /* IB Methods */
 - (IBAction)Live1Pressed:(id)sender {
-    self.LblTitle.text = @"Is Alive!";
-    self.ImgTitle.image = [UIImage imageNamed: @"Ned.jpg"];
+    //self.LblTitle.text = @"Is Alive!";
+    self.ImgResult.image = [UIImage imageNamed: @"tick.jpg"];
 }
 /*-----------------------------------*/
 - (IBAction)Death1Pressed:(id)sender {
-    self.LblTitle.text = @"Is Dead";
-    self.ImgTitle.image = [UIImage imageNamed: @"Robb.jpg"];}
+    //self.LblTitle.text = @"Is Dead";
+    self.ImgResult.image = [UIImage imageNamed: @"Wrong.jpg"];
+}
 
 @end

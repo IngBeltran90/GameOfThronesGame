@@ -17,6 +17,7 @@
 - (IBAction)Live1Pressed:(id)sender;
 - (IBAction)Death1Pressed:(id)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *ImgTitle;
+@property (weak, nonatomic) IBOutlet UIImageView *ImgResult;
 
 @end
 
