@@ -12,12 +12,52 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9jR-fS-FDC" userLabel="Live1">
+                                <rect key="frame" x="38" y="195" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Live"/>
+                                <connections>
+                                    <action selector="Live1Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pHI-Fc-aRi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NUf-ac-JsC" userLabel="Death1">
+                                <rect key="frame" x="205" y="195" width="66" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Death"/>
+                                <connections>
+                                    <action selector="Death1Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iB6-mv-bN1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YYE-m3-H4o">
+                                <rect key="frame" x="100" y="223" width="125" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gameof-thrones.jpg" id="hRP-Ib-9Fj" userLabel="TitleGoT">
+                                <rect key="frame" x="50" y="63" width="220" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="Death1" destination="NUf-ac-JsC" id="wcl-aH-vKi"/>
+                        <outlet property="ImgTitle" destination="hRP-Ib-9Fj" id="5GL-FP-KIV"/>
+                        <outlet property="LblTitle" destination="YYE-m3-H4o" id="XVa-vg-Ls8"/>
+                        <outlet property="Live1" destination="9jR-fS-FDC" id="k7f-2B-yya"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="153.59999999999999" y="274.06"/>
+            <point key="canvasLocation" x="153" y="274"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gameof-thrones.jpg" width="725" height="290"/>
+    </resources>
 </document>

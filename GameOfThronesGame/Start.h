@@ -10,6 +10,13 @@
 
 @interface Start : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *LblTitle;
+@property (weak, nonatomic) IBOutlet UIButton *Live1;
+@property (weak, nonatomic) IBOutlet UIButton *Death1;
+
+- (IBAction)Live1Pressed:(id)sender;
+- (IBAction)Death1Pressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *ImgTitle;
 
 @end
 
